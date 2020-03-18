@@ -1,0 +1,31 @@
+/* box model*/
+
+[role="presentation"]{
+    width: 500px;
+    height: 432px;
+    
+    margin-top: 64px;
+    margin-right: auto;
+    margin-bottom: 64px;
+    margin-left: auto;
+    /* margin: 64px auto */
+
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    /* padding: 32px */
+
+    border-top: 32px solid red;
+    border-right: 32px solid yellow;
+    border-bottom: 32px solid blue;
+    border-left: 32px solid green;
+    background: black;
+}
+p {
+    max-width: 500px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #ffffff ; 			/*  there are a few ways to do colour */
+    line-height: 1.5;
+}
