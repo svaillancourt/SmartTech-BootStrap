@@ -6,13 +6,13 @@
 
     <meta charset="UTF-8">
     <!-- to convert to mobile format  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon works for  -->
     <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x16">
 
     <!-- Vendor Style: -->
-    <link rel="stylesheet" href="./vendor/css/bootstrap-grid.min.css"> 
+    <link rel="stylesheet" href="./vendor/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
 
     <!-- Vendor Scripts: -->
@@ -20,14 +20,33 @@
     <script type="text/javascript" src="./vendor/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- PUT THE STYLESHEET LINK HERE -->
-    <link rel="stylesheet" href="./css/main.css"> 
+    <link rel="stylesheet" href="./css/main.css">
 
     <!-- PUT THE JAVASCRIPT LINK HERE -->
-    <script type="text/javascript" src="./js/scripts.js"></script> 
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 
 <body>
-    <h1>Bootstrap Example</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <section class="top-nav">
+        <div>
+            Projematic
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Plans</li>
+            <li>My Account</li>
+            <li>Contact Us</li>
+        </ul>
+    </section>
+
+    <h2>Resize window to collapse menu</h2>
+
 </body>
 
 </html>

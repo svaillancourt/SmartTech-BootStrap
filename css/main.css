@@ -206,18 +206,34 @@ p{
   color: white;
 }
 
-/* rgb(224,152,189)  pink */ 
-/* rgb(251,67,55)   red  */
-/* rgb(254,249,103)  yellow */
-/* rgb(24,101,181)  blue */
-/* rgb(113,204,195)  teal */
 
 /* grid layout and background colors*/
 
-.home { grid-area: home; background: url('../img/backgrounds/90s-pattern-1.jpg') ;}
-.about { grid-area: about; background: rgb(247, 247, 247); }
+/* Projematic Color Palette 
+
+Projematic Blue #003399 RGB O 51 153 
+Logo, key screen components, large text 
+
+Projematic Aqua #00E6E6 rgb(0, 230, 230); 
+Logo, screen accents, flowchart boxes 
+
+Projematic Text #17255A rgb(23, 37, 90); RGB 23 37 90 
+Small text 
+
+Projematic Background #FCF7F8 rgb(252, 247, 248); 
+
+Background, text on dark background 
+
+Projematic Grey #COC6DO RGB 192198 208 
+
+Background or shading where appropriate 
+Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
+
+.banner1 { grid-area: banner1; background: #00E6E6; }
+.banner2 { grid-area: banner2; background: rgb(247, 247, 247); }
+.banner3 { grid-area: banner3; background: rgb(17, 142, 180); }
+
 .nav { grid-area: nav; background: rgb(24,101,181);}
-.edu1 { grid-area: edu1; background: rgb(17, 142, 180); }
 .cert1 { grid-area: cert1; background: rgb(24,101,181); }
 .cert2 { grid-area: cert2; background: rgb(224,152,189); }
 .soft1 { grid-area: soft1; background: rgb(254,249,103);}
@@ -293,11 +309,11 @@ body {
   
   grid-template-areas:
 
-  "home" /* Row 1: hero spans two columns. */
-  "about" /* Row 2: each is one cell. */
+  "banner1" /* Row 1: hero spans two columns. */
+  "banner2" /* Row 2: each is one cell. */
   "nav" /* Row 3: each is one cell. */
   "title1" /* Row 4: each is one cell. */
-  "edu1" /* Row 5: each is one cell. */
+  "banner3" /* Row 5: each is one cell. */
   "pic2" /* Row 6: each is one cell. */
   "title2" /* Row 7: each is one cell. */
   "cert1"  /* Row 8: each is one cell. */
@@ -353,10 +369,10 @@ body{
 
   grid-template-areas:
 
-  "home home home about about about" /* Row 1: hero spans two columns. */
+  "banner1 banner1 banner1 banner2 banner2 banner2" /* Row 1: hero spans two columns. */
   "nav nav nav nav nav nav" /* Row 2: each is one cell. */
   "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
-  "edu1 edu1 edu1 edu1 edu1 edu1" /* Row 4: each is one cell. */
+  "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
   "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
   "cert1 cert1 cert1 cert2 cert2 cert2" /* Row 6: each is one cell. */
   "title3 title3 title3 title3 title3 title3" /* Row 7: each is one cell. */
@@ -482,10 +498,10 @@ body{
 
     grid-template-areas:
 
-    "home home home about about about" /* Row 1: hero spans two columns. */
+    "banner1 banner1 banner1 banner2 banner2 banner2" /* Row 1: hero spans two columns. */
     "nav nav nav nav nav nav" /* Row 2: each is one cell. */
     "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
-    "edu1 edu1 edu1 edu1 edu1 edu1" /* Row 4: each is one cell. */
+    "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
     "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
     "cert1 cert1 cert1 cert2 cert2 cert2" /* Row 6: each is one cell. */
     "title3 title3 title3 title3 title3 title3" /* Row 7: each is one cell. */
