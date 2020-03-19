@@ -10,11 +10,25 @@
 
 /* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-= */
 
-/* rgb(224,152,189)  pink */ 
-/* rgb(251,67,55)   red  */
-/* rgb(254,249,103)  yellow */
-/* rgb(24,101,181)  blue */
-/* rgb(113,204,195)  teal */
+/* Projematic Color Palette 
+
+Projematic Blue #003399 RGB O 51 153 
+Logo, key screen components, large text 
+
+Projematic Aqua #00E6E6 RGB O 230 230 
+Logo, screen accents, flowchart boxes 
+
+Projematic Text #17255A RGB 23 37 90 
+Small text 
+
+Projematic Background #FCF7F8 RGB 252 247 248 
+
+Background, text on dark background 
+
+Projematic Grey #COC6DO RGB 192198 208 
+
+Background or shading where appropriate 
+Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 
 body{
   /*background-image: url(../img/backgrounds/90s-pattern-1.jpg); /*The image used */
