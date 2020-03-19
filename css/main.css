@@ -30,7 +30,7 @@ Projematic Grey #COC6DO RGB 192198 208
 Background or shading where appropriate 
 Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 
-body{
+.grid{
   /*background-image: url(../img/backgrounds/90s-pattern-1.jpg); /*The image used */
   opacity: 1;        /*varies from 0-1*/
   background-position: top left; /* Center the image */
@@ -233,7 +233,7 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 .banner2 { grid-area: banner2; background: rgb(247, 247, 247); }
 .banner3 { grid-area: banner3; background: rgb(17, 142, 180); }
 
-.nav { grid-area: nav; background: rgb(24,101,181);}
+.banner2 { grid-area: banner2; background: rgb(24,101,181);}
 .cert1 { grid-area: cert1; background: rgb(24,101,181); }
 .cert2 { grid-area: cert2; background: rgb(224,152,189); }
 .soft1 { grid-area: soft1; background: rgb(254,249,103);}
@@ -279,7 +279,7 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   border-color: 6px solid black;
 }
 
-body {
+.grid {
   display: grid;
   grid-template-columns: 100%; /* factions instead of %*/ 
   grid-row: auto, /* 1 */
@@ -311,7 +311,7 @@ body {
 
   "banner1" /* Row 1: hero spans two columns. */
   "banner2" /* Row 2: each is one cell. */
-  "nav" /* Row 3: each is one cell. */
+  "banner2" /* Row 3: each is one cell. */
   "title1" /* Row 4: each is one cell. */
   "banner3" /* Row 5: each is one cell. */
   "pic2" /* Row 6: each is one cell. */
@@ -339,7 +339,7 @@ body {
 
 @media screen and ( min-width: 500px ) {
 
-body{
+.grid{
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10% ; /* factions instead of %*/ 
   grid-row: auto, /* 1 */
@@ -370,7 +370,7 @@ body{
   grid-template-areas:
 
   "banner1 banner1 banner1 banner2 banner2 banner2" /* Row 1: hero spans two columns. */
-  "nav nav nav nav nav nav" /* Row 2: each is one cell. */
+  "banner2 banner2 banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
   "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
   "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
   "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
@@ -476,7 +476,7 @@ body{
 
 @media screen and ( min-width: 1024px ) {
 
-  body{
+  .grid{
     display: grid;
     grid-template-columns: 10% 20% 20% 20% 20% 10% ; /* factions instead of %*/ 
     grid-row: auto, /* 1 */
@@ -498,8 +498,8 @@ body{
 
     grid-template-areas:
 
-    "banner1 banner1 banner1 banner2 banner2 banner2" /* Row 1: hero spans two columns. */
-    "nav nav nav nav nav nav" /* Row 2: each is one cell. */
+    "banner1 banner1 banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
+    "banner2 banner2 banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
     "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
     "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
     "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
