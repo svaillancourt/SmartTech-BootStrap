@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: Quacker;
-  src: url(../fonts/Quacker.ttf);
-}
-
 /* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-= */
 
 /* Projematic Color Palette 
@@ -37,10 +32,10 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   background-repeat: repeat; /* repeat the image */
 }
 
-h1, h2, h3, h4, ul, li, p{
+h1, h2, h3, h4, h5, h6, ul, li, p{
 
   background-color: transparent;
-  font-family: 'Roboto' ;
+  font-family: Tahoma, Georgia;
   min-width: fit-content;
 }
 
@@ -75,7 +70,7 @@ p{
   
   min-width: fit-content;
 
-  color:black;
+  color:#17255A;
 
   line-height: 1.7;
   font-size: small;
@@ -131,7 +126,6 @@ p{
 
   text-align: left;
 
-  color: black;
   font-size: medium;
   line-height: 1.7;
 
@@ -150,7 +144,6 @@ p{
   padding-right: 32px;
   padding-bottom: 10px;
 
-  color: black;
   font-size: medium; 
   font-family: 'Open Sans', sans-serif;
   line-height: 1.7;
@@ -206,6 +199,20 @@ p{
   color: white;
 }
 
+.profile-picture /* # equals an ID*/ {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  width: 50%;
+  border-color: 6px solid black;
+}
+
 
 /* grid layout and background colors*/
 
@@ -229,111 +236,27 @@ Projematic Grey #COC6DO RGB 192198 208
 Background or shading where appropriate 
 Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 
-.banner1 { grid-area: banner1; background: #00E6E6; }
+.banner1 { grid-area: banner1; background: #17255A; }
 .banner2 { grid-area: banner2; background: rgb(247, 247, 247); }
 .banner3 { grid-area: banner3; background: rgb(17, 142, 180); }
-
-.banner2 { grid-area: banner2; background: rgb(24,101,181);}
-.cert1 { grid-area: cert1; background: rgb(24,101,181); }
-.cert2 { grid-area: cert2; background: rgb(224,152,189); }
-.soft1 { grid-area: soft1; background: rgb(254,249,103);}
-.soft2 { grid-area: soft2; background: url('../img/backgrounds/90s-pattern-1.jpg');}
-.tech1 { grid-area: tech1; background: rgb(113,204,195);}
-.tech2 { grid-area: tech2; background: rgb(113,204,195);}
-.title1 { grid-area: title1; background: rgb(224,152,189);}
-.title2 { grid-area: title2; background: rgb(251,67,55); }
-.title3 { grid-area: title3; background: rgb(113,204,195);}
-.title4 { grid-area: title4; background: rgb(24,101,181) ;}
-.title5 { grid-area: title5; background: rgb(251,67,55);}
-.title6 { grid-area: title6; background: rgb(224,152,189);}
-.job1 { grid-area: job1; background: rgb(224,152,189);}
-.job2 { grid-area: job2; background: rgb(24,101,181);}
-.job3 { grid-area: job3; background: rgb(254,249,103);}
-.job4 { grid-area: job4; background: rgb(113,204,195);}
-.vol1 { grid-area: vol1; background: rgb(24,101,181); }
-.vol2 { grid-area: vol2; background: rgb(251,67,55);}
-.foot { grid-area: foot; background: rgb(254,249,103);}
-.bg1 { grid-area: bg1; background: rgb(247, 247, 247);}
-.bg2 { grid-area: bg2; background: rgb(224,152,189);}
-.bg3 { grid-area: bg3; background: rgb(251,67,55);}
-.bg4 { grid-area: bg4; background: rgb(254,249,103);}
-.bg5 { grid-area: bg5; background: rgb(24,101,181);}
-.bg6 { grid-area: bg6; background: rgb(113,204,195);}
-.pic1 { grid-area: pic1; background: url('../img/backgrounds/90s-pattern-1.jpg');}
-.pic2 { grid-area: pic2; background: url('../img/backgrounds/90s-pattern-3.jpg');}
-.pic3 { grid-area: pic3; background: url('../img/backgrounds/90s-pattern-1.jpg');}
-.pic4 { grid-area: pic4; background: url('../img/backgrounds/90s-pattern-1.jpg');}
-.pic5 { grid-area: pic5; background: url('../img/backgrounds/90s-pattern-1.jpg');}
-
-.profile-picture /* # equals an ID*/ {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-left: 25%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-
-  width: 50%;
-  border-color: 6px solid black;
-}
+.banner4 { grid-area: banner4; background: rgb(17, 142, 180); }
+.banner5 { grid-area: banner5; background: rgb(17, 142, 180); }
+.banner6 { grid-area: banner6; background: rgb(161, 206, 219); }
 
 .grid {
   display: grid;
   grid-template-columns: 100%; /* factions instead of %*/ 
-  grid-row: auto, /* 1 */
-            auto, /* 2 */
-            auto, /* 3 */
-            auto, /* 4 */
-            auto, /* 5 */
-            auto, /* 6 */
-            auto, /* 7 */
-            auto, /* 8 */
-            auto, /* 9 */
-            auto, /* 10 */
-            auto, /* 11 */
-            auto, /* 12 */
-            auto, /* 13 */
-            auto, /* 14 */
-            auto, /* 15 */
-            auto, /* 16 */
-            auto, /* 17 */
-            auto, /* 18 */
-            auto, /* 19 */
-            auto, /* 20 */
-            auto, /* 21 */
-            auto, /* 22 */
-            auto, /* 23 */
-            auto; /* 24 */
+  grid-row: auto, auto, auto;
   
   grid-template-areas:
 
   "banner1" /* Row 1: hero spans two columns. */
   "banner2" /* Row 2: each is one cell. */
-  "banner2" /* Row 3: each is one cell. */
-  "title1" /* Row 4: each is one cell. */
-  "banner3" /* Row 5: each is one cell. */
-  "pic2" /* Row 6: each is one cell. */
-  "title2" /* Row 7: each is one cell. */
-  "cert1"  /* Row 8: each is one cell. */
-  "cert2" /* Row 9: each is one cell. */
-  "title3" /* Row 10: each is one cell. */
-  "soft1" /* Row 11: third-service spans two columns.  */
-  "soft2" /* Row 12: each is one cell. */
-  "title4" /* Row 13: each is one cell. */
-  "tech1" /* Row 14: third-service spans two columns.  */
-  "tech2" /* Row 15: each is one cell. */
-  "title5" /* Row 16: each is one cell. */
-  "job1"  /* Row 17: third-service spans two columns.  */
-  "job2" /* Row 18: each is one cell. */
-  "job3"  /* Row 19: each is one cell. */
-  "job4" /* Row 20: third-service spans two columns.  */
-  "title6" /* Row 21: each is one cell. */
-  "vol1"  /* Row 22: each is one cell. */
-  "vol2" /* Row 23: each is one cell. */
-  "foot" /* Row 24: each is one cell. */
-}
+  "banner3" /* Row 2: each is one cell. */
+  "banner4" /* Row 2: each is one cell. */
+  "banner5" /* Row 2: each is one cell. */
+  "banner6"; /* Row 2: each is one cell. */
+
 
 /* -=-=-=-=-=-=-= tablet site -=-=-=-=-=-=-= */
 
@@ -341,50 +264,18 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 
 .grid{
   display: grid;
-  grid-template-columns: 10% 20% 20% 20% 20% 10% ; /* factions instead of %*/ 
-  grid-row: auto, /* 1 */
-            auto, /* 2 */
-            auto, /* 3 */
-            auto, /* 4 */
-            auto, /* 5 */
-            auto, /* 6 */
-            auto, /* 7 */
-            auto, /* 8 */
-            auto, /* 9 */
-            auto, /* 10 */
-            auto, /* 11 */
-            auto, /* 12 */
-            auto, /* 13 */
-            auto, /* 14 */
-            auto, /* 15 */
-            auto, /* 16 */
-            auto, /* 17 */
-            auto, /* 18 */
-            auto, /* 19 */
-            auto, /* 20 */
-            auto, /* 21 */
-            auto, /* 22 */
-            auto, /* 23 */
-            auto; /* 24 */
+  grid-template-columns: 25% 25% 25% 25%; /* factions instead of %*/ 
+  grid-row: auto, auto, auto, auto;
 
   grid-template-areas:
 
-  "banner1 banner1 banner1 banner2 banner2 banner2" /* Row 1: hero spans two columns. */
-  "banner2 banner2 banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
-  "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
-  "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
-  "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
-  "cert1 cert1 cert1 cert2 cert2 cert2" /* Row 6: each is one cell. */
-  "title3 title3 title3 title3 title3 title3" /* Row 7: each is one cell. */
-  "soft1 soft1 soft1 soft2 soft2 soft2" /* Row 8: third-service spans two columns.  */
-  "title4 title4 title4 title4 title4 title4 " /* Row 9: each is one cell. */
-  "tech1 tech1 tech1 tech2 tech2 tech2" /* Row 10: third-service spans two columns.  */
-  "title5 title5 title5 title5 title5 title5" /* Row 11: each is one cell. */
-  "job1 job1 job1 job2 job2 job2" /* Row 12: third-service spans two columns.  */
-  "job3 job3 job3 job4 job4 job4" /* Row 13: third-service spans two columns.  */
-  "title6 title6 title6 title6 title6 title6 " /* Row 14: each is one cell. */
-  "vol1 vol1 vol1 vol2 vol2 vol2" /* Row 15: each is one cell. */
-  "foot foot foot foot foot foot" /* row 16 */
+  "banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
+  "banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
+  "banner3 banner3 banner3 banner3" /* Row 3: each is one cell. */
+  "banner4 banner4 banner4 banner4" /* Row 4: each is one cell. */
+  "banner5 banner5 banner5 banner5" /* Row 4: each is one cell. */
+  "banner6 banner6 banner6 banner6" /* Row 4: each is one cell. */
+ 
 }
 
 .profile-picture /* # equals an ID*/ {
@@ -478,42 +369,18 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
 
   .grid{
     display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10% ; /* factions instead of %*/ 
-    grid-row: auto, /* 1 */
-              auto, /* 2 */
-              auto, /* 3 */
-              auto, /* 4 */
-              auto, /* 5 */
-              auto, /* 6 */
-              auto, /* 7 */
-              auto, /* 8 */
-              auto, /* 9 */
-              auto, /* 10 */
-              auto, /* 11 */
-              auto, /* 12 */
-              auto, /* 13 */
-              auto, /* 14 */
-              auto, /* 15 */
-              auto; /* 16 */
+    grid-template-columns: 25% 25% 25% 25% ; /* factions instead of %*/ 
+    grid-row: auto, auto, auto, auto, auto, auto; /* 6 */
 
     grid-template-areas:
 
-    "banner1 banner1 banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
-    "banner2 banner2 banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
-    "title1 title1 title1 title1 title1 title1" /* Row 3: each is one cell. */
-    "banner3 banner3 banner3 banner3 banner3 banner3" /* Row 4: each is one cell. */
-    "title2 title2 title2 title2 title2 title2" /* Row 5: each is one cell. */
-    "cert1 cert1 cert1 cert2 cert2 cert2" /* Row 6: each is one cell. */
-    "title3 title3 title3 title3 title3 title3" /* Row 7: each is one cell. */
-    "soft1 soft1 soft1 soft2 soft2 soft2" /* Row 8: third-service spans two columns.  */
-    "title4 title4 title4 title4 title4 title4 " /* Row 9: each is one cell. */
-    "tech1 tech1 tech1 tech2 tech2 tech2" /* Row 10: third-service spans two columns.  */
-    "title5 title5 title5 title5 title5 title5" /* Row 11: each is one cell. */
-    "job1 job1 job1 job2 job2 job2" /* Row 12: third-service spans two columns.  */
-    "job3 job3 job3 job4 job4 job4" /* Row 13: third-service spans two columns.  */
-    "title6 title6 title6 title6 title6 title6 " /* Row 14: each is one cell. */
-    "vol1 vol1 vol1 vol2 vol2 vol2" /* Row 15: each is one cell. */
-    "foot foot foot foot foot foot" /* row 16 */
+    "banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
+    "banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
+    "banner3 banner3 banner3 banner3" /* Row 3: each is one cell. */
+    "banner4 banner4 banner4 banner4" /* Row 4: each is one cell. */
+    "banner5 banner5 banner5 banner5" /* Row 4: each is one cell. */
+    "banner6 banner6 banner6 banner6" /* Row 4: each is one cell. */
+
   }
 
 .profile-picture /* # equals an ID*/ {
@@ -601,4 +468,4 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   }
 
 }
-
+}
