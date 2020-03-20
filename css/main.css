@@ -3,7 +3,11 @@
   padding: 0;
 }
 
-/* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-= */
+.jumbotron{
+  padding-top: 30px;
+}
+
+/* -=-=-=-=-=-=-= mobile site -=-=-=-=-=-=-=
 
 /* Projematic Color Palette 
 
@@ -36,7 +40,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p{
 
   background-color: transparent;
   font-family: Tahoma, Georgia;
-  min-width: fit-content;
+  /* min-width: fit-content; */
 }
 
 h6{
@@ -211,7 +215,7 @@ p{
 
   width: 50%;
   border-color: 6px solid black;
-}
+} */
 
 
 /* grid layout and background colors*/
@@ -256,7 +260,7 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   "banner4" /* Row 2: each is one cell. */
   "banner5" /* Row 2: each is one cell. */
   "banner6"; /* Row 2: each is one cell. */
-
+}
 
 /* -=-=-=-=-=-=-= tablet site -=-=-=-=-=-=-= */
 
@@ -275,7 +279,6 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   "banner4 banner4 banner4 banner4" /* Row 4: each is one cell. */
   "banner5 banner5 banner5 banner5" /* Row 4: each is one cell. */
   "banner6 banner6 banner6 banner6" /* Row 4: each is one cell. */
- 
 }
 
 .profile-picture /* # equals an ID*/ {
@@ -360,28 +363,26 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
   color: white;
 }
 
-
 }
 
 /* -=-=-=-=-=-=-= Desktop size -=-=-=-=-=-=-= */
 
 @media screen and ( min-width: 1024px ) {
 
-  .grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% ; /* factions instead of %*/ 
-    grid-row: auto, auto, auto, auto, auto, auto; /* 6 */
+.grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% ; /* factions instead of %*/ 
+  grid-row: auto, auto, auto, auto, auto, auto; /* 6 */
 
-    grid-template-areas:
+  grid-template-areas:
 
-    "banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
-    "banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
-    "banner3 banner3 banner3 banner3" /* Row 3: each is one cell. */
-    "banner4 banner4 banner4 banner4" /* Row 4: each is one cell. */
-    "banner5 banner5 banner5 banner5" /* Row 4: each is one cell. */
-    "banner6 banner6 banner6 banner6" /* Row 4: each is one cell. */
-
-  }
+  "banner1 banner1 banner1 banner1" /* Row 1: hero spans two columns. */
+  "banner2 banner2 banner2 banner2" /* Row 2: each is one cell. */
+  "banner3 banner3 banner3 banner3" /* Row 3: each is one cell. */
+  "banner4 banner4 banner4 banner4" /* Row 4: each is one cell. */
+  "banner5 banner5 banner5 banner5" /* Row 4: each is one cell. */
+  "banner6 banner6 banner6 banner6" /* Row 4: each is one cell. */
+}
 
 .profile-picture /* # equals an ID*/ {
 
@@ -458,8 +459,7 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
     padding: 50px 1px;
     margin: 35px;
     color: white;
-    font-size: 30px
-    
+    font-size: 30px    
   }
 
   .style2:hover {
@@ -467,5 +467,4 @@ Projematic Grey #FF3300 RGB 255 51 0   VERY occasional use to draw attention  */
     color: white;
   }
 
-}
 }
